@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>VAJRA LIBRARY</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+         body 
+         .container {
+             padding: 40px;
+             margin: 0 auto;
+             max-width: 1000px;
+             text-align: center;
+         }
+
+         .nested{
+         	display:grid;
+         	grid-template-columns:repeat(5, 1fr);
+         	grid-auto-rows: 120px;
+         	grid-gap:1em;
+         }
+
+         .nested > div{
+         	border:#333 7px solid;
+         	padding:1em;
+         }
+         .nested > div{
+         	background:#eee;
+         	padding:1em;
+         }
+         .wrapper > div{
+         	border:#333 7px solid;
+         	background:#eee;
+         	padding:7em;
+         }
+         #searchBar {
+         	width: 40%;
+         	height: 30px;
+         	border-radius: 3px;
+         	border: 2px solid;
+         	padding: 3px 6px;
+         	font-size: 20px;
+         }
+         .searchbtn{
+         	position: absolute;
+            width: 5%;
+            height:40px;
+            border-radius: 3px;
+            border: 2px solid;
+            padding:3px 6px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+         }
+ </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>&#x2728;Welcome To The Vajra Library  &#x2728;</h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="Search for a books"
+                />
+                <button type="submit" class="searchbtn">
+                	<i class="fa fa-search"></i> 
+                </button>
+            </div>
+            <div class="wrapper">
+            <ul id="charactersList"></ul>
+           <div class="nested">
+              <div>books</div>
+              <div>books</div>
+              <div>books</div>
+              <div>books</div>
+              <div>books</div>
+           </div>
+
+        </div>
+     </body>
+</html>
